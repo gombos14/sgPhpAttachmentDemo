@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="urlap.css">
+    <title>Ajánlatkérés</title>
+</head>
+<body>
+    <header>
+        <div><h1>Amerikaiszek.hu
+        </h1></div>
+    </header>
+    <form action="convert_csv.php" class="urlap" method="post">
+        <div id="Headerajanlat"> 
+            <h2>Adatok</h2>
+            <hr>
+        </div>
+        <label for="firstname">Családnév</label><br>
+        <input type="text" name="firstname" required placeholder="Családnév"><br>
+        
+        <label for="lastname">Utónév</label><br>
+        <input type="text" name="lastname" required placeholder="Utónév"><br>
+
+        <label for="company">Cég neve</label><br>
+        <input type="text" name="company" placeholder="Cég neve"><br>
+
+        <label for="phone">Telefonszám</label><br>
+        <input type="text" name="phone" required placeholder="Telefonszám"><br>
+
+        <label for="email">E-mail</label><br>
+        <input type="text" name="email" required placeholder="E-mail"><br>
+
+
+        <div id="Headerajanlat"> 
+            <h3>Szállítási adatok</h3>
+            <hr>
+        </div>
+            
+        <label for="place">Helyszín</label><br>
+        <input type="text" name="place" required placeholder="Pontos cím"><br>
+
+        <label for="deliveryDay">Szállítás napja</label><br>
+        <input type="date" name="deliveryDay"><br>
+
+        <label for="installationStartingPoint">Installálás kezdetének időpontja</label><br>
+        <input type="datetime-local" name="installationStartingPoint"><br>
+
+        <label for="installationEndingPoint">Installálás befejezésének időpontja</label><br>
+        <input type="datetime-local" name="installationEndingPoint"><br>
+
+        <label for="breakingTime">Bontás időpontja, ideje</label><br>
+        <input type="datetime-local" name="breakingTime"><br>
+
+        <label for="contact">Kontakt a helyszínen (mobil)</label><br>
+        <input type="text" name="contact"><br>
+
+        <div id="Headerajanlat"> 
+            <h4>Termékek</h4>
+            <hr>
+        </div>
+        <input type="submit" value="Ajánlat kérés">
+
+
+    </form>
+    
+        
+</body>
+</html>
